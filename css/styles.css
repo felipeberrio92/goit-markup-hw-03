@@ -11,6 +11,15 @@
 
 
 }
+.links{
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.02;
+    font-size: 14px;
+}
+.p_0{
+    padding: 30px;
+}
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -25,22 +34,41 @@ a:visited{
 ul{
     list-style: none;
 }
-
-.site_navegation{
-    color: var(--color_black);
-    font-weight: 500;
-    line-height: 1.1;
-    letter-spacing: 0.02;
-    
+.main__header{
+    width: 1200px;
+    margin: auto;
 }
+.headers_navigation{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    text-align: center;
+
+}
+.menu_navigation{
+    display: flex;
+    justify-content: space-between;
+    gap: 344px;
+}
+.menu_list{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 .logo{
     color: var(--color_blue);
-    text-decoration: none;
     font-family: Raleway;
     font-weight: 700;
     line-height: 1.1;
     letter-spacing: 0.03;
-    
+    font-size: 26px;
+    gap: 92px;
 }
 
 .header_link{
@@ -54,6 +82,7 @@ ul{
     color: var(--color_blue);
 
 }
+
 
 .cel_contact{
     color:var(--color_gray);
@@ -73,20 +102,18 @@ ul{
 .email_contact:active{
     color: var(--color_blue);
 }
-.main__head .container{
+
+.head_container{
     width: 1200px;
-    height: 600px;
-}
-.head_title .container_head{
-    width: 1200px;
-    height: 600px;
-    top: 80px;
-    left: -4px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
 }
 .head_title{
     color: var(--color_white);
     background-color: rgba(47, 48, 58, 1);
     text-align:center;
+    width: auto;
 }
 
 .main_title{
@@ -103,6 +130,14 @@ ul{
     border-radius: 4px;
     width: 261px;
     height: 50px;
+}
+.about_list{
+    width: 1200px;
+    padding: 15px;
+    margin: auto;
+    display: flex;
+    justify-content:space-evenly;
+
 }
 
 .about_item{
@@ -125,6 +160,17 @@ ul{
     size: 14px;
     letter-spacing: 0.03;
 }
+.about_container{
+    width: 270px;
+    margin: auto;
+}
+.main__services{
+    display:inline-block;
+    margin: auto;
+    width: 1200px;
+    justify-content: center;
+    text-align: center;
+}
 .headings{
     color: var(--color_black);
     font-family: inherit;
@@ -134,6 +180,25 @@ ul{
     size: 36px;
     letter-spacing: 0.03;
 }
+.images_services{
+    display: flex;
+    width: 1200px;
+    gap: 30px;
+    align-items: center;
+    padding-left: 105px;
+    
+}
+
+.main__team{
+    display:inline-block;
+    gap: 15px;
+}
+.images_team{
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+
+}
 .job_title{
     color: var(--color_gray);
     font-family: inherit;
@@ -141,6 +206,7 @@ ul{
     size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03;
+    text-align: center;
 }
 .job_name{
     color: var(--color_black);
@@ -149,6 +215,7 @@ ul{
     size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03;
+    text-align: center;
 }
 .main__footer{
     background-color: var(--color_black);
@@ -179,11 +246,13 @@ ul{
 /*inicio pagina portfolio */
 .portafolio{
     display: none;
+    
 }
 .list_button{
     border-style: none;
-    text-align: center;
-    
+    display:inline-flex;
+    flex-direction: row;
+    justify-content: center;
 }
 .button_item{
     font-family: inherit;
@@ -192,6 +261,7 @@ ul{
     font-size: 16px;
     line-height: 1.62;
     border-radius: 4px;
+    text-align: center;
 
 }
 .button_item:focus{
@@ -207,6 +277,20 @@ ul{
     size: 16px;
     letter-spacing: 0.03;
     cursor: pointer;
+    
+}
+.Proyects{
+    
+}
+
+.photo_item{
+    flex-basis: calc((100% - 2px) / 3);
+
+}
+.card_photo{
+    text-align: center;
+    padding: 0;
+    margin: 0;
     
 }
 .proyect_name{

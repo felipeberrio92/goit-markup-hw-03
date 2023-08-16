@@ -11,90 +11,99 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header id="main__header">
-    <nav>
-        <a href="./index.html" class="logo">WebStudio</a>
-        <ul class="site_navegation">
-            <li><a href="./index.html" class="header_link current">Estudio</a></li>
-            <li><a href="./portfolio.html" class="header_link">Portafolio</a></li>
-            <li><a href="#" class="header_link">Contactos</a></li>
-        </ul>
-    </nav>
-        <ul class="main__contact">
-            <li><a class="cel_contact" href="tel:+525555296000">+52 555 529 60 00</a></li>
-            <li><a class="email_contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li> 
-            
-        </ul>
+    <header class="main__header">
+    
+        <nav class="headers_navigation container">
+            <span><a href="./index.html" class="logo">WebStudio</a></span>
+            <div class="menu_navigation">
+            <ul class="links menu_list">
+                <li><a href="./index.html" class="header_link current">Estudio</a></li>
+                <li><a href="./portfolio.html" class="header_link">Portafolio</a></li>
+                <li><a href="#" class="header_link">Contactos</a></li>
+            </ul>
+        
+            <ul class="links menu_list">
+                <li><a class="cel_contact" href="tel:+525555296000">+52 555 529 60 00</a></li>
+                <li><a class="email_contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li> 
+                
+            </ul>
+            </div>
+        </nav>
+    
     </header>
-    <main class="main__head container">
-        <section class="head_title container_head">
+    <main class="main__head">
+        <section class="head_title container">
+            <div class="head_container ">
             <h1 class="main_title container_title" >SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
             <button class="button">Solicite nuestro servicio</button>
+            </div>
         </section>
-        <section #="main__about" class="main_about">
-            <ul class="about_list">
+        <section #="main__about" class="main_about container">
+            <ul class="about_list p_0">
                 <li>
                 <h3 class="about_item">Atencion a los detalles</h3>
-                <p class="about_text">Nos adentramos en todos los detalles y procesos de su negocio, para así desarrollar una solución a su medida.</p>
+                <p class="about_text about_container">Nos adentramos en todos los detalles y procesos de su negocio, para así desarrollar una solución a su medida.</p>
                 </li>
                 <li>
                 <h3 class="about_item">Puntualidad</h3>
-                <p class="about_text">Con nosotros, usted puede sentirse seguro y protegido. Un principio importante de la empresa: respetar su tiempo y respetar los plazos acordados.</p>
+                <p class="about_text about_container">Con nosotros, usted puede sentirse seguro y protegido. Un principio importante de la empresa: respetar su tiempo y respetar los plazos acordados.</p>
                 </li>
                 <li>
-                <h3 class="about_item">Planificacion</h3>
-                <p class="about_text">Usted podrá observar y participar en cada fase del desarrollo y aplicación de soluciones.</p>
+                <h3 class="about_item ">Planificacion</h3>
+                <p class="about_text about_container">Usted podrá observar y participar en cada fase del desarrollo y aplicación de soluciones.</p>
                 </li>
                 <li>
                 <h3 class="about_item">Tecnologia moderna</h3>
-                <p class="about_text">Usamos herramientas innovadoras para resolver las tareas asignadas. Es hora de simplificar los procesos laborales.</p>
+                <p class="about_text about_container">Usamos herramientas innovadoras para resolver las tareas asignadas. Es hora de simplificar los procesos laborales.</p>
                 </li>
             </ul>
         </section>
-        <section class="main__services">
-            <h2 class="headings">A que nos dedicamos</h2>
-            <ul>
+        <section class="main__services ">
+            <h2 class="headings ">A que nos dedicamos</h2>
+            <ul class="images_services ">
                 <li><img src="./images/services/Service1.jpg" alt="servicios" width="373" height="324"></li>
                 <li><img src="./images/services/Service2.jpg" alt="servicios" width="373" height="324"></li>
                 <li><img src="./images/services/Service3.jpg" alt="servicios" width="373" height="324"></li>
                 </ul>
         </section>
         <section class="main__team">
-            <h2 class="headings">Nuestro Equipo</h2>  
-            <ul>
-                <li>
-                <img src="./images/team/Andres_C.jpg" alt="Nuestro team" width="270">
+            <h2 class="headings container">Nuestro Equipo</h2>
+            <div class="images_team" >
+            <ul class="p_0">
+                <li class="">
+                <img  src="./images/team/Andres_C.jpg" alt="Nuestro team" width="270">
                 <h3 class="job_name">Andres Cubo</h3>
                 <p class="job_title">Diseñador de Productos</p>
                 </li>
             </ul>
-            <ul>
+            <ul class="p_0">
                 <li>
                 <img src="./images/team/Carla_P.jpg" alt="Nuestro team" width="270">
                 <h3 class="job_name">Carla Palacios</h3>
                 <p class="job_title">Desarrolladora Frontend</p>
                 </li>
             </ul>
-            <ul>
+            <ul class="p_0">
                 <li>
                 <img src="./images/team/Mario_D.jpg" alt="nuestro team" width="270">
                 <h3 class="job_name">Mario Dorado</h3>
                 <p class="job_title">Marketing</p>
                 </li>
             </ul>
-            <ul>
+            <ul class="p_0">
                 <li>
                 <img src="./images/team/Pablo_M.jpg" alt="nuestro team" width="270">
                 <h3 class="job_name">Pablo Mijangos</h3>
                 <p class="job_title">Diseñador IU</p>
                 </li>
             </ul>
+            </div>  
         </section>
     </main>
     <footer class="main__footer">
         <a href="#" class="logo">WebStudio</a>
         <address class="main__address">
-        <ul>
+        <ul class="p_0">
             <li><a href="#" class="footer_address">Calz. Ticomán 500, Ciudad de México, CDMX, México</a></li>
             <li><a href="info@example.com" class="footer_contact"> info@example.com</a></li>
             <li><a href="tel:+525555296000"class="footer_contact"> +52 55 5529 6000</a></li>
