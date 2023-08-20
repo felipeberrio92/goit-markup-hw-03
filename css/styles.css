@@ -350,28 +350,31 @@ ul{
     
 }
 .cuadricula{
-    flex-basis: calc((100% -2 * 20px) / 3);
+    flex-basis: calc((100% -2 * 2px) / 3);
     flex-wrap: wrap;
     justify-content:center;
 }
 .proyect_name{
     color: var(--color_black);
     font-family: inherit;
-    text-align: center;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
+    text-align: left;
     letter-spacing:auto;
     font-style: normal;
+    text-align:left;
+    font-weight: 700;
+    padding-left: 24px;
+    font-size: 18px;
+    line-height: 2;
     flex-basis: calc((100% - 2px) / 3);
 }
 .categories{
     color: var(--color_gray);
     font-family: inherit;
+    text-align: left;
+    padding-left: 24px;
     font-weight: 400;
     size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
-    text-align: center;
     flex-basis: calc((100% - 2px) / 3);
 }
