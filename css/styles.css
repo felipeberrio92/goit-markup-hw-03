@@ -17,11 +17,12 @@
     letter-spacing: 0.02em;
     font-size: 14px;
 }
-.p_0{
-    padding: 30px;
-}
+
+
 body{
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: auto;
 }
 a:any-link{
     text-decoration: none;
@@ -35,32 +36,36 @@ ul{
     list-style: none;
     margin: 0;
 }
-.main__header{
-    width: 1200px;
-    margin: auto;
-
+.list{
+    margin: 0;
+    padding: 0;
 }
+
 .headers_navigation{
     display: flex;
-    gap: 10px;
-    justify-content: space-between;
+    flex-wrap: wrap;
     text-align: center;
-
+    align-items: center;
+    margin: auto;
+    
 }
 .menu_navigation{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 344px;
+    padding: 32px 0px;
 }
 .menu_list{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 50px;
 }
 .container{
+    margin: auto;
     width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+    
 }
 
 .logo{
@@ -70,12 +75,14 @@ ul{
     line-height: 1.1;
     letter-spacing: 0.03em;
     font-size: 26px;
-    gap: 92px;
-    text-size-adjust: ;
+    column-gap: 92px;
+    padding-right: 93px;
+
 }
 
 .header_link{
     color: var(--color_black);
+    
 }
 .header_link:hover{
     color: var(--color_blue);
@@ -116,39 +123,53 @@ ul{
     color: var(--color_white);
     background-color: rgba(47, 48, 58, 1);
     text-align:center;
-    width: auto;
+
 }
 
 .main_title{
     font-family: inherit;
+    text-align: center;
+    display: flex;
+    margin-left: 260px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
+    padding-top: 200px;
+    width: 696px;
+    margin-top: 0px
+
 }
 .button{
     color: var(--color_white);
     background-color: var(--color_blue);
     cursor: pointer;
+    display: inline-flex;
     border-radius: 4px;
     width: 261px;
     height: 50px;
+    margin-bottom: 200px;
+    gap: 10px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
 }
 .about_list{
-    width: 1200px;
-    padding: 15px;
     margin: auto;
     display: flex;
-    justify-content:space-evenly;
+    flex-wrap: wrap;
+    width: 1200px;
+    padding-top: 95px;
+    column-gap: 30px;
 
 }
 
 .about_item{
     color: var(--color_black);
-    font-weight: 700;
     font-family: inherit;
+    font-weight: 700;
     line-height: 1.1;
-    size: 14px;
+    font-size: 14px;
     letter-spacing: 0.03em;
 
 }
@@ -162,45 +183,65 @@ ul{
     line-height: 1.7;
     size: 14px;
     letter-spacing: 0.03em;
+    
 }
 .about_container{
-    width: 270px;
     margin: auto;
+    width: 270px;
 }
 .main__services{
-    display:inline-block;
     margin: auto;
-    width: 1200px;
     justify-content: center;
     text-align: center;
 }
-.headings{
+.headings_service{
     color: var(--color_black);
     font-family: inherit;
     text-align:center;
     font-weight: 700;
     line-height: 1.16;
-    size: 36px;
+    font-size: 36px;
     letter-spacing: 0.03em;
-    justify-content: center;
+    padding-bottom: 55px;
+    margin-top: 94px;
+}
+.headings_team{
+    color: var(--color_black);
+    font-family: inherit;
+    text-align:center;
+    font-weight: 700;
+    line-height: 1.16;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    padding-bottom: 50px;
+    margin-top: 155px;
 }
 .images_services{
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
     width: 1200px;
     gap: 30px;
-    align-items: center;
-    padding-left: 105px;
     
 }
 
 .main__team{
-    display:inline-block;
-    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.shadow{
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 0px 0px 4px 4px;
+    
 }
 .images_team{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    width: 1200px;
+    justify-content: center;
+    gap: 37px;
 
 }
 .job_title{
@@ -211,6 +252,7 @@ ul{
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-align: center;
+    margin-bottom: 94px; */
 }
 .job_name{
     color: var(--color_black);
@@ -223,6 +265,8 @@ ul{
 }
 .main__footer{
     background-color: var(--color_black);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .footer_address{
     color: var(--color_white);
@@ -239,6 +283,7 @@ ul{
     size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+    padding-bottom: 60px;
 }
 .footer_address:hover{
     color: var(--color_blue);
@@ -254,18 +299,25 @@ ul{
 }
 .list_button{
     border-style: none;
-    display:inline-flex;
+    display:flex;
     flex-direction: row;
     justify-content: center;
+    font-weight: 500px;
+    padding-top: 106px;
+    gap: 8px;       
+    padding-bottom: 56px;
 }
 .button_item{
     font-family: inherit;
     border-style: none;
+    text-align: center;
     font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
     font-size: 16px;
     line-height: 1.62;
     border-radius: 4px;
-    text-align: center;
+    letter-spacing: 0.05em;
 
 }
 .button_item:focus{
@@ -284,25 +336,30 @@ ul{
     
 }
 .card_photo{
-    /*flex-basis: calc((100% - 2px) / 3);*/
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    padding-bottom: 92px;
 }
 .border{
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
     border: 1px solid rgb(238, 238, 238);
     background: rgb(255, 255, 255);
-
+    
+}
+.cuadricula{
+    flex-basis: calc((100% -2 * 20px) / 3);
 }
 .proyect_name{
     color: var(--color_black);
     font-family: inherit;
-    font-weight: 700;
-    size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
     text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing:auto;
+    font-style: normal;
+    flex-basis: calc((100% - 2px) / 3);
 }
 .categories{
     color: var(--color_gray);
@@ -312,8 +369,5 @@ ul{
     line-height: 1.9;
     letter-spacing: 0.03em;
     text-align: center;
-}
-.shadow{
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    border-radius: 0px 0px 4px 4px;
+    flex-basis: calc((100% - 2px) / 3);
 }
