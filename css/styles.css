@@ -18,7 +18,6 @@
     font-size: 14px;
 }
 
-
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -77,7 +76,7 @@ ul{
     font-size: 26px;
     column-gap: 92px;
     padding-right: 93px;
-
+    
 }
 
 .header_link{
@@ -87,27 +86,43 @@ ul{
 .header_link:hover{
     color: var(--color_blue);
 }
-
+.header_link:focus{
+    color: var(--color_blue);
+}
+.links:focus-within{
+    color: var(--color_blue);
+}
 .header_link.current{
     color: var(--color_blue);
-
 }
 
 
 .cel_contact{
     color:var(--color_gray);
 }
-.email_contact{
+.cel_contact:focus{
     color:var(--color_gray);
+}
+.cel_contact:focus-within{
+    color:var(--color_blue)
 }
 .cel_contact:hover{
     color:var(--color_blue);
 }
-.email_contact:hover{
-    color:var(--color_blue);
-}
 .cel_contact:active{
     color: var(--color_blue);
+}
+.email_contact{
+    color:var(--color_gray);
+}
+.email_contact:focus{
+    color:var(--color_blue)
+}
+.email_contact:focus-within{
+    color:var(--color_blue)
+}
+.email_contact:hover{
+    color:var(--color_blue);
 }
 .email_contact:active{
     color: var(--color_blue);
@@ -288,7 +303,19 @@ ul{
 .footer_address:hover{
     color: var(--color_blue);
 }
+.footer_address:focus{
+    color: var(--color_blue);
+}
+.footer_address:focus-within{
+    color: var(--color_blue);
+}
 .footer_contact:hover{
+    color: var(--color_blue);
+}
+.footer_contact:focus{
+    color: var(--color_blue);
+}
+.footer_contact:focus-within{
     color: var(--color_blue);
 }
 
@@ -306,6 +333,7 @@ ul{
     padding-top: 106px;
     gap: 8px;       
     padding-bottom: 56px;
+    
 }
 .button_item{
     font-family: inherit;
@@ -319,6 +347,26 @@ ul{
     border-radius: 4px;
     letter-spacing: 0.05em;
 
+}
+.button_todo{
+    width: 73px;
+    height: 38px;
+}
+.button_sitio{
+    width: 128px;
+    height: 38px;
+}
+.button_aplicaciones{
+    width: 145px;
+    height: 38px;
+}
+.button_diseño{
+    width: 103px;
+    height: 38px;
+}
+.button_marketing{
+    width: 130px;
+    height: 38px;
 }
 .button_item:focus{
     background-color: var(--color_blue);
@@ -347,12 +395,15 @@ ul{
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
     border: 1px solid rgb(238, 238, 238);
     background: rgb(255, 255, 255);
+    height: 404;
+    width: 370px;
     
 }
 .cuadricula{
     flex-basis: calc((100% -2 * 2px) / 3);
     flex-wrap: wrap;
     justify-content:center;
+    height: 322;
 }
 .proyect_name{
     color: var(--color_black);
@@ -365,7 +416,8 @@ ul{
     padding-left: 24px;
     font-size: 18px;
     line-height: 2;
-    flex-basis: calc((100% - 2px) / 3);
+    height: 322;
+    width: 36;
 }
 .categories{
     color: var(--color_gray);
@@ -376,5 +428,6 @@ ul{
     size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
-    flex-basis: calc((100% - 2px) / 3);
+    height: 322;
+    width: 30;
 }
